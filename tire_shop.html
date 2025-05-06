@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Add Tire Inventory</title>
+  <link rel="stylesheet" href="tireshop.css">
+
+  <script type="module" src="app.js"></script>
+</head>
+<body>
+  <div class="form-container">
+    <h2>Add Tire Inventory</h2>
+    <form id="inventory-form">
+      <input type="text" id="brand" placeholder="Brand" required />
+      <input type="text" id="model" placeholder="Model" required />
+      <input type="number" id="quantity" placeholder="Quantity" required />
+      <input type="number" id="price" placeholder="Price ($)" step="0.01" required />
+      <input type="text" id="size" placeholder="Size (e.g. 225/50R17)" required />
+      <button type="submit">Add Tire</button>
+    </form>
+    <p id="message"></p>
+
+    <h3>Current Inventory</h3>
+<table id="inventory-table">
+  <thead>
+    <tr>
+      <th>Brand</th>
+      <th>Model</th>
+      <th>Quantity</th>
+      <th>Price ($)</th>
+      <th>Size</th>
+      <th>Competetive Price Average</th>
+    </tr>
+  </thead>
+  <tbody>
+    <!-- Inventory items will go here -->
+  </tbody>
+</table>
+
+  </div>
+
+</body>
+</html>
